@@ -50,3 +50,28 @@ const rect5: RectWithArea = {
         return this.size.width * this.size.height;
     }
 }
+
+//interfejsy wzaimodejstwujut s classami
+//interface prinato nazywat s bolszoj I
+interface IClock{
+   time: Date
+   setTime(date: Date): void
+}
+
+class Clock implements IClock{
+  time: Date = new Date()
+  setTime(date: Date): void {
+      this.time = date
+  }
+}
+
+//interfejs dla bolszogo objekta s denamiczeskimi kluczami, cztob wse elementy nie propisywat 
+interface Styles{
+    [key: string]: string
+}
+
+const css = {
+    border: '1px solid black',
+    marginTop: '20px',
+    borderRadius: '30px'
+}

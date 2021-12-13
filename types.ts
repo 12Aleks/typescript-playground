@@ -29,7 +29,7 @@ function sayMyName(name: string): void{
 }
 sayMyName('Bob')
 
-//Never
+//Never np. kogda jawnaja oszybka w funkcii
 function throwError(message: string): never{
    throw new Error(message)
 }
@@ -43,7 +43,6 @@ function infinite():never{
 //Swoi tipy
 
 type Login = string
-
 const login: Login  = 'admin'
 
 type ID = string | number
