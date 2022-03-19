@@ -7,8 +7,8 @@ interface UserItemProps{
 
 const UserItem:FC<UserItemProps> = ({user}) => {
     return (
-        <div style={{padding: '15px'}}>
-            {user.id}/ {user.name}/ {user.email}, address: {user.address.city}, {user.address.street}
+        <div style={{padding: '15px', border: '1px solid black', margin: '5px 0'}}>
+            {user.id}. Name: {user.name}, Email: {user.email}.   User address: {user.address.city}, {user.address.street}
         </div>
     );
 };
